@@ -5,6 +5,7 @@ var moment = require('moment')
 /* GET home page. */
 router.post('/', function(req, res, next) {
   res.json({
+    response_type: "in_channel",
     text: "It has been " + moment().diff('5/25/2018', 'days') + " days since Daniel should have gotten the money from investors"
   })
 });
