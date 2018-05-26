@@ -1,8 +1,89 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #444444;
+  height: calc(100% - 50px);
+  margin: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+.paper {
+  height: calc(100% - 100px);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.paper .logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.paper .nav {
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.paper .nitem ul {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.paper .nitem ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.content {
+  position: absolute;
+  background-color: green;
+  width: 100%;
+}
+
+.paper .left {
+  left: -100%;
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
+}
+
+.paper .right {
+  right: -100%;
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
+}
+
+.paper .middle {
+  left: 0%;
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
 }
